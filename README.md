@@ -31,6 +31,10 @@ you can now import MailSender in your own usage, and pass your parameters
 ```
 from test_email import MailSender
 
+subject = "Run Status Notifier"
+message = "Error at line: 69"
+# could be any file (csv, jpg, xlsx, txt etc)
+file_attachment_path = some/path/in/projectfolder/sample.csv 
 ms = MailSender(subject, message, file_attachment_path)
 ms.sendmail()
 ```
